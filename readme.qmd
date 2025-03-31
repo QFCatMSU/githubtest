@@ -21,6 +21,7 @@ The Weibull distribution can parameterized by shape $k$ and scale $\lambda$:
 $$
 \Large f(t) = \frac{k}{\lambda} \left(\frac{t}{\lambda}\right)^{k - 1} e^{-\left(\frac{t}{\lambda}\right)^k}
 $$
+
 Both $k$ and $\lambda$ must be > 0 for the Weibull distribution.  In terms of interpretation, $k$ can be thought of as modulating the risk or hazard of an event happening through time while $\lambda$ modulates the horizontal stretch of the distribution.  
 
 For example, if $k$ < 1.0, some fish leave quickly while others linger.  If $k$ = 1.0, it means there is a constant hazard through time (i.e., this is an exponential model). If $k$ > 1.0, the hazard increases through time so fish are more likely to leave as time goes on. In this case, $k$ can be thought of as describing the risk profile of fish.
