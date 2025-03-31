@@ -29,10 +29,10 @@ $$
 \Large f(t) = \frac{k}{\lambda} \left(\frac{t}{\lambda}\right)^{k - 1} e^{-\left(\frac{t}{\lambda}\right)^k}
 $$
 
-Both $\boldsymbol{k}$ and $\boldsymbol{\lambda}$must be \> 0 for the
+Both $\boldsymbol{k}$ and $\boldsymbol{\lambda}$ must be \> 0 for the
 Weibull distribution. In terms of interpretation, $\boldsymbol{k}$ can
 be thought of as modulating the risk or hazard of an event happening
-through time while $\boldsymbol{\lambda}$modulates the horizontal
+through time while $\boldsymbol{\lambda}$ modulates the horizontal
 stretch of the distribution.
 
 For example, if $\boldsymbol{k}$ \< 1.0, some fish leave quickly while

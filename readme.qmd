@@ -22,7 +22,7 @@ $$
 \Large f(t) = \frac{k}{\lambda} \left(\frac{t}{\lambda}\right)^{k - 1} e^{-\left(\frac{t}{\lambda}\right)^k}
 $$
 
-Both $\boldsymbol{k}$ and $\boldsymbol{\lambda}$must be > 0 for the Weibull distribution.  In terms of interpretation, $\boldsymbol{k}$ can be thought of as modulating the risk or hazard of an event happening through time while $\boldsymbol{\lambda}$modulates the horizontal stretch of the distribution.  
+Both $\boldsymbol{k}$ and $\boldsymbol{\lambda}$ must be > 0 for the Weibull distribution.  In terms of interpretation, $\boldsymbol{k}$ can be thought of as modulating the risk or hazard of an event happening through time while $\boldsymbol{\lambda}$ modulates the horizontal stretch of the distribution.  
 
 For example, if $\boldsymbol{k}$ < 1.0, some fish leave quickly while others linger.  If $\boldsymbol{k}$ = 1.0, it means there is a constant hazard through time (i.e., this is an exponential model). If $\boldsymbol{k}$ > 1.0, the hazard increases through time so fish are more likely to leave as time goes on. In this case, $\boldsymbol{k}$ can be thought of as describing the risk profile of fish.
 
