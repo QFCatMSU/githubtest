@@ -27,7 +27,9 @@ $\lambda$:
 
 $$
 f(t) = \frac{k}{\lambda} \left(\frac{t}{\lambda}\right)^{k - 1} e^{-\left(\frac{t}{\lambda}\right)^k}
-$$ Both $k$ and $\lambda$ must be \> 0 for the Weibull distribution. In
+$$
+
+Both $k$ and $\lambda$ must be \> 0 for the Weibull distribution. In
 terms of interpretation, $k$ can be thought of as modulating the risk or
 hazard of an event happening through time while $\lambda$ modulates the
 horizontal stretch of the distribution.
