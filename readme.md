@@ -22,8 +22,8 @@ the first 100 pages of Paul Allison’s Survival Analysis using SAS book.
 
 ## 1. Weibull Probability Density Function (PDF)
 
-The Weibull distribution can parameterized by shape **$k$** and scale
-**$\lambda$**:
+The Weibull distribution can parameterized by shape $\boldsymbol{k}$ and
+scale $\boldsymbol{\lambda$}:
 
 $$
 \Large f(t) = \frac{k}{\lambda} \left(\frac{t}{\lambda}\right)^{k - 1} e^{-\left(\frac{t}{\lambda}\right)^k}
@@ -88,8 +88,8 @@ $$
 
 Where:
 
-- $(a = \log k - k \log \lambda)$
-- $(b = k - 1)$
+- $\boldsymbol{(a = \log k - k \log \lambda)}$
+- $\boldsymbol{(b = k - 1)}$
 
 ## 6. Cumulative Hazard Function
 
