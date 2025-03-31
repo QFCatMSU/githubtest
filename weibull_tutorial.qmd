@@ -1,7 +1,7 @@
 ---
 title: "Parametric survival modeling with censoring via the Weibull distribution"
 author: "Chris Cahill"
-format: gfm
+format: html
 ---
 
 ## Description of files
@@ -20,9 +20,10 @@ The Weibull distribution can parameterized by shape $k$ and scale $\lambda$:
 
 $$
 f(t) = \frac{k}{\lambda} \left(\frac{t}{\lambda}\right)^{k - 1} e^{-\left(\frac{t}{\lambda}\right)^k}
-$$ Both $k$ and $\lambda$ must be \> 0 for the Weibull distribution. In terms of interpretation, $k$ can be thought of as modulating the risk or hazard of an event happening through time while $\lambda$ modulates the horizontal stretch of the distribution.
+$$
+Both $k$ and $\lambda$ must be > 0 for the Weibull distribution.  In terms of interpretation, $k$ can be thought of as modulating the risk or hazard of an event happening through time while $\lambda$ modulates the horizontal stretch of the distribution.  
 
-For example, if $k$ \< 1.0, some fish leave quickly while others linger. If $k$ = 1.0, it means there is a constant hazard through time (i.e., this is an exponential model). If $k$ \> 1.0, the hazard increases through time so fish are more likely to leave as time goes on. In this case, $k$ can be thought of as describing the risk profile of fish.
+For example, if $k$ < 1.0, some fish leave quickly while others linger.  If $k$ = 1.0, it means there is a constant hazard through time (i.e., this is an exponential model). If $k$ > 1.0, the hazard increases through time so fish are more likely to leave as time goes on. In this case, $k$ can be thought of as describing the risk profile of fish.
 
 For $\lambda$, higher values mean fish tend to move or transition later, all other things being equal. It describes the timing of movement events.
 
@@ -110,7 +111,7 @@ Together, they form the complete log-likelihood for censored survival data.
 
 ## 9. Simulating Weibull Distributions
 
-```{r echo = T, eval = T}
+``` {r echo = T, eval = T}
 # --- panel 1: varying shape, fixed scale ---
 set.seed(123)
 k_vals <- c(0.5, 1, 1.5, 2)
