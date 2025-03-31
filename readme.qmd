@@ -1,6 +1,6 @@
 ---
 title: "readme"
-format: html
+format: gfm
 editor: visual
 ---
 
@@ -18,9 +18,15 @@ When you click the **Render** button a document will be generated that includes 
 
 You can add options to executable code like this
 
+$$
+(4x)^5
+$$
+
 ```{r}
 #| echo: false
 2 * 2
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+![](images/GettyImages-468364850-657f39bc70054f1bae3649caa072a7bd.jpg)
