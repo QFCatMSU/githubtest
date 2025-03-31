@@ -3,7 +3,10 @@ title: "Parametric survival modeling with censoring via the Weibull distribution
 author: "Chris Cahill"
 format: 
   gfm:
-    html-math-method: mathml
+    html-math-method: katex
+    include-in-header:
+      - text: |
+          <style>h1{color:blue;}</style>
 ---
 
 The Weibull distribution can parameterized by shape $k$ and scale $\lambda$:

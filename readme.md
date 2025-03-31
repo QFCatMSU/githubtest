@@ -2,6 +2,8 @@
 distribution
 Chris Cahill
 
+<style>h1{color:blue;}</style>
+
 The Weibull distribution can parameterized by shape $k$ and scale
 $\lambda$:
 
