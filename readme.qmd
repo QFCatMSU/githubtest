@@ -16,7 +16,7 @@ This document derives and implements the Weibull log-likelihood with optional ri
 
 ## 1. Weibull Probability Density Function (PDF)
 
-The Weibull distribution can parameterized by shape $k$ and scale $\lambda$:
+The Weibull distribution can parameterized by shape **$k$** and scale **$\lambda$**:
 
 $$
 \Large f(t) = \frac{k}{\lambda} \left(\frac{t}{\lambda}\right)^{k - 1} e^{-\left(\frac{t}{\lambda}\right)^k}
