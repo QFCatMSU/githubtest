@@ -16,17 +16,17 @@ This document derives and implements the Weibull log-likelihood with optional ri
 
 ## 1. Weibull Probability Density Function (PDF)
 
-The Weibull distribution can parameterized by shape $\boldsymbol{k}$ and scale $\boldsymbol{\lambda$}:
+The Weibull distribution can parameterized by shape $\boldsymbol{k}$ and scale $\boldsymbol{\lambda}$:
 
 $$
 \Large f(t) = \frac{k}{\lambda} \left(\frac{t}{\lambda}\right)^{k - 1} e^{-\left(\frac{t}{\lambda}\right)^k}
 $$
 
-Both $k$ and $\lambda$ must be > 0 for the Weibull distribution.  In terms of interpretation, $k$ can be thought of as modulating the risk or hazard of an event happening through time while $\lambda$ modulates the horizontal stretch of the distribution.  
+Both $\boldsymbol{k}$ and $\boldsymbol{\lambda}$must be > 0 for the Weibull distribution.  In terms of interpretation, $\boldsymbol{k}$ can be thought of as modulating the risk or hazard of an event happening through time while $\boldsymbol{\lambda}$modulates the horizontal stretch of the distribution.  
 
-For example, if $k$ < 1.0, some fish leave quickly while others linger.  If $k$ = 1.0, it means there is a constant hazard through time (i.e., this is an exponential model). If $k$ > 1.0, the hazard increases through time so fish are more likely to leave as time goes on. In this case, $k$ can be thought of as describing the risk profile of fish.
+For example, if $\boldsymbol{k}$ < 1.0, some fish leave quickly while others linger.  If $\boldsymbol{k}$ = 1.0, it means there is a constant hazard through time (i.e., this is an exponential model). If $\boldsymbol{k}$ > 1.0, the hazard increases through time so fish are more likely to leave as time goes on. In this case, $\boldsymbol{k}$ can be thought of as describing the risk profile of fish.
 
-For $\lambda$, higher values mean fish tend to move or transition later, all other things being equal. It describes the timing of movement events.
+For $\boldsymbol{\lambda}$, higher values mean fish tend to move or transition later, all other things being equal. It describes the timing of movement events.
 
 We simulate a bunch of distributions below to visualize this, but first we'll walk through some important math involving the Weibull and derive a loglikelihood for censored data.
 
@@ -91,7 +91,7 @@ $$
 
 ## 7. Log-Likelihood with Censoring
 
-Let $(d_i = 1)$ if the event is observed, and 0 if censored. Then the likelihood for observation (i) is:
+Let $\boldsymbol{(d_i = 1)}$ if the event is observed, and 0 if censored. Then the likelihood for observation (i) is:
 
 $$
 \Large L_i = [f(t_i)]^{d_i} [S(t_i)]^{1 - d_i} = [h(t_i) S(t_i)]^{d_i} [S(t_i)]^{1 - d_i} = [h(t_i)]^{d_i} S(t_i)
@@ -105,8 +105,8 @@ $$
 
 ### Interpretation:
 
--   $\log h(t_i)$: Only contributes when the event is observed $d_i = 1$. It reflects the **instantaneous risk**.
--   $-H(t_i)$: Always contributes. It reflects the **probability of surviving** up to time $t_i$.
+-   $\boldsymbol{\log h(t_i)}$: Only contributes when the event is observed $d\boldsymbol{_i = 1}$. It reflects the **instantaneous risk**.
+-   $\boldsymbol{-H(t_i)}$: Always contributes. It reflects the **probability of surviving** up to time $\boldsymbol{t_i}$.
 
 Together, they form the complete log-likelihood for censored survival data.
 
@@ -198,7 +198,7 @@ for (i in seq_along(lambda_vals2)) {
 
 ```
 
-This simulation visualizes how the Weibull distribution behaves under different shape values with a fixed scale. Shape $k < 1$ leads to decreasing hazard, $k = 1$ gives constant hazard (exponential), and $k > 1$ gives increasing hazard.
+This simulation visualizes how the Weibull distribution behaves under different shape values with a fixed scale. Shape $\boldsymbol{k < 1}$ leads to decreasing hazard, $\boldsymbol{k = 1}$ gives constant hazard (exponential), and $\boldsymbol{k > 1}$ gives increasing hazard.
 
 ## 8. R Implementation (Log-Likelihood Function)
 
