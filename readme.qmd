@@ -3,7 +3,7 @@ title: "Parametric survival modeling with censoring via the Weibull distribution
 author: "Chris Cahill"
 format: 
   gfm:
-    html-math-method: webtex
+    html-math-method: katex
 ---
 
 ## Description of files
