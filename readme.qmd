@@ -3,7 +3,7 @@ title: "Parametric survival modeling with censoring via the Weibull distribution
 author: "Chris Cahill"
 format: gfm
 ---
- 
+  
 ## Description of files
 
 'weibull_play.R' shows some simple ways to simulate and estimate Weibull data
