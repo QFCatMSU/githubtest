@@ -1,6 +1,7 @@
 # Parametric survival modeling with censoring via the Weibull
 distribution
 Chris Cahill
+Auth test line
 
 ## Description of files
 
